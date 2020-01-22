@@ -1,3 +1,72 @@
-<h1>
-  {{title}}
-</h1>
+Live Demo
+<html>
+<head>
+  <title>Star Wars Rest API</title>
+  <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+</head>
+
+<body>
+  <div class="main">
+    <section>
+      <img src="/images/logo.jpg" class="main_logo">
+    </section>
+    <section>
+      <h1 class="font_theme main_title">Escoja su pelicula</h1>
+    </section>
+    <section>
+
+      <div ng-app="mainApp" ng-controller="movieController">
+        <table border="0" class="center">
+          <tr>
+            <td>Pelicula:</td>
+            <td>
+              <table>
+                <tr>
+                  <th>Nombre</th>.
+                  <th>Descripcion</th>
+                </tr>
+                <tr ng-repeat="subject in movie">
+  
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </section>
+
+    <img src="/images/background.jpg" class="main_background">
+  </div>
+
+  <script>
+    $( document ).ready(function() {
+    console.log( "ready!" );
+});
+         var mainApp = angular.module("mainApp", []);
+   
+         mainApp.controller('movieController', function($scope){
+            $scope.movie = {
+               firstName: "Mahesh",
+               lastName: "Parashar",
+               fees:500,
+               
+               subjects:[
+                  {name:'Physics',marks:70},
+                  {name:'Chemistry',marks:80},
+                  {name:'Math',marks:65},
+                  {name:'English',marks:75},
+                  {name:'Hindi',marks:67}
+               ],
+               fullName: function() {
+                  var movieObject;
+                  movieObject = $scope.movie;
+                  return movieObject.firstName + " " + movieObject.lastName;
+               }
+            };
+         });
+      </script>
+
+  </body>
+</html>
