@@ -48,3 +48,8 @@ CODIGO : 1921981340
 
 This App allows you to implements the service from Star Wars APPI 
 https://swapi.co/documentation
+
+#HOW ITS LOOCKS
+
+
+
