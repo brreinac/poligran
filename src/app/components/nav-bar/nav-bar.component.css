@@ -1,0 +1,37 @@
+ul li a:hover {
+  background-color: #2586d7;
+  margin-top: -2;
+  padding-bottom: 12px;
+}
+
+ul li {
+  display: table-cell;
+  padding: 5px;
+}
+
+ul li a {
+  font-family: 'Poller One', cursive;
+  font-size: 2em;
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+
+}
+
+
+ul {
+  padding: 0;
+  display: table;
+  list-style: none;
+  margin: 0px auto;
+  border-radius: 6px;
+}
+
+  ul li a {
+    display: inline;
+    border-radius: 4px;
+    padding: 20px;
+  }
+
