@@ -1,0 +1,32 @@
+body {
+  padding: 0px;
+  height: 0px;
+  max-height:100%;
+
+}
+
+
+.main_logo {
+  width: 10%;
+  height: 100%;
+  margin: 0px auto;
+  display: table;
+  top: 0px;
+}
+
+.font_theme {
+  font-family: 'Poller One', cursive;
+}
+
+.main_title {
+  font-size: 1.5em;
+  margin: 0px auto;
+  display: table;
+  text-transform: uppercase;
+}
+
+
+.center {
+  margin: 0px auto;
+  display: table;
+}

@@ -1,62 +1,34 @@
-Live Demo
+
 <html>
 <head>
   <title>Star Wars Rest API</title>
   <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="main">
     <section>
-      <img src="/images/logo.jpg" class="main_logo">
+      <img src="assets/images/logo.jpg" class="main_logo">
     </section>
     <section>
-      <h1 class="font_theme main_title">Escoja su pelicula</h1>
+      <header style="width:100%;">
+        <app-nav-bar></app-nav-bar>
+      </header>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+      <footer>
+        <app-footer></app-footer>
+      </footer>
     </section>
-    <section>
-
-      <div ng-app="mainApp" ng-controller="movieController">
-        <table border="0" class="center">
-          <tr>
-            <td>Pelicula:</td>
-            <td>
-              <table>
-                <tr>
-                  <th>Nombre</th>.
-                  <th>Descripcion</th>
-                </tr>
-                <tr ng-repeat="subject in movie">
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-        <ul>
-          <li>Name: {{luke.name}}</li>
-          <li>Eyes color: {{luke.eye_color}}</li>
-          <li>Skin color: {{luke.skin_color}}</li>
-        </ul>
-      </div>
-
-    </section>
-
-    <img src="/images/background.jpg" class="main_background">
   </div>
-  </body>
+</body>
 </html>
 
-<script>
-  // include the module
-  angular.module('myStarWarsApp', ['xyz.angular.swapi']).
 
-  controller('jediController', ['swapiService', 
-    function($scope, swapiService) {
-      // get luke skywalker data
-      swapiService.peope('1').
-      then(function(lukeData){
-        $scope.luke = lukeData;
-      });
-    }
-  ])
-</script>
+
+
+
+
